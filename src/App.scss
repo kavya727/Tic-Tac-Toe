@@ -1,0 +1,83 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol,
+ul {
+  padding-left: 15px;
+}
+
+.steps-button {
+  padding-left: 15px;
+  height: 2em;
+  width: 10em;
+  border-radius: 5px;
+  color: #757070;
+  font-size: 1em;
+  background: #e2dede;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #e6bc7d;
+  border: 1px solid #999;
+  float: left;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 6em;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 6em;
+  color: #6d6565;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .player-info {
+    padding-left: 15px;
+    color: #757070;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
